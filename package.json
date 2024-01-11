@@ -1,0 +1,26 @@
+{
+  "name": "june-webserver",
+  "version": "2.1.0",
+  "author": "Eduardo Ruiz <eruiz@dataclick.es> (https://www.dataclick.es)",
+  "description": "JuNe WebServer ultra-lightweight HTTP or HTTPS server to run HTML projects and for development with HMR",
+  "keywords": [
+    "http server", "https server", "server", "web server", "dev server", "development", "hmr", "hot module replacement", "http2", "training"
+  ],
+  "license": "MIT",
+  "main": "webserver.js",
+  "homepage": "https://github.com/EduardoRuizM/june-webserver",
+  "bugs": {
+    "url": "https://github.com/EduardoRuizM/june-webserver/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EduardoRuizM/june-webserver.git"
+  },
+  "bin": {
+    "webserver": "webserver.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node webserver.js"
+  }
+}
