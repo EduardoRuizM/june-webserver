@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logo.png" title="JuNe WebServer" width="314" height="170" />
+  <img src="logo.png" title="JuNe WebServer" width="314" height="170">
 </p>
 
 # [JuNe WebServer](https://github.com/EduardoRuizM/june-webserver "JuNe WebServer")
@@ -17,14 +17,14 @@ And for development with Hot Module Replacement (HMR) to automatically update th
 - Binaries compiled (x64 bits) for: 🐧Linux, 🪟 Windows and 🍎MacOS.
 - Just 1 file and 7 Kb.
 
-![7 Kb](https://img.shields.io/github/size/EduardoRuizM/june-webserver/webserver.js)
+![7 Kb](https://img.shields.io/github/size/EduardoRuizM/june-webserver/webserver.js) ![NPM Downloads](https://img.shields.io/npm/dt/june-webserver)
 
-### 👉 JuNe Server was developed initially for JavaScript Framework [JuNe PaulaJS](https://paulajs.com "JuNe PaulaJS") - [GitHub](https://github.com/EduardoRuizM/june-paulajs "GitHub")
+### 👉 JuNe Server was developed initially for JavaScript Framework [JuNe PaulaJS](https://github.com/EduardoRuizM/june-paulajs "JuNe PaulaJS")
 
 # Author
 [Eduardo Ruiz](https://github.com/EduardoRuizM) <<eruiz@dataclick.es>>
 
-# [JuNe](https://just-needed.com "JuNe") / JUst NEeded Philosophy
+# JuNe / JUst NEeded Philosophy
 1. **Source code using less code as possible**
   So you can understand code and find bugs easier.
 2. **Few and optimized lines is better**
@@ -46,7 +46,7 @@ Then run with `webserver [parameters]`
 
 ### Running from binaries (x64 bits)
 You can also download compiled binaries:
-[🐧Linux](https://just-needed.com/file/june-webserver-linux.zip "Linux") (19 Mb), [🪟 Windows](https://just-needed.com/file/june-webserver-win.zip "Windows") (16 Mb) or [🍎MacOS](https://just-needed.com/file/june-webserver-macos.zip "MacOS") (19 Mb).
+[🐧Linux](https://drive.google.com/file/d/1trMw2La5ctz45J8D1q9zw7ficMR4gFGs/view?usp=sharing "Linux") (20 Mb), [🪟 Windows](https://drive.google.com/file/d/1JBNyxFWd30J9pFb5wPX-dfh99A3KKUUu/view?usp=sharing "Windows") (17 Mb) or [🍎MacOS](https://drive.google.com/file/d/19kUNRZ6_1Cs-M5Nx0FldoJ6qKrDKNgBQ/view?usp=sharing "MacOS") (20 Mb).
 
 # Parameters
 Passed as parameter (prefixed with hyphen) on command line, or an array object on class creation.
@@ -115,7 +115,7 @@ subjectAltName = @alt_names
 IP.1 = 127.0.0.1
 DNS.1 = localhost
 ```
-2) Generate certificates to use on your HTTP server `localhost.crt` and `localhost.key`
+2) Generate certificates (for 10 years) to use on your HTTP server `localhost.crt` and `localhost.key`
 ```
 openssl genrsa -out CA.key -des3 2048
 openssl req -x509 -sha256 -new -nodes -days 3650 -key CA.key -out CA.pem
@@ -133,5 +133,5 @@ Everything you need to develop your project:
 - [JuNe WebServer](https://github.com/EduardoRuizM/june-webserver "JuNe WebServer") Web server with HMR.
 
 ### Frontend
-- [JuNe PaulaJS](https://paulajs.com "JuNe PaulaJS") Powerful JavaScript framework - [GitHub](https://github.com/EduardoRuizM/june-paulajs "GitHub")
+- [JuNe PaulaJS](https://github.com/EduardoRuizM/june-paulajs "JuNe PaulaJS") Powerful JavaScript framework
 - [JuNe CSS](https://github.com/EduardoRuizM/june-css "JuNe CSS") Full responsive CSS library with icons.
