@@ -1,6 +1,6 @@
 {
   "name": "june-webserver",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "author": "Eduardo Ruiz <eruiz@dataclick.es> (https://www.dataclick.es)",
   "description": "JuNe WebServer ultra-lightweight HTTP or HTTPS server to run HTML projects and for development with HMR",
   "keywords": [

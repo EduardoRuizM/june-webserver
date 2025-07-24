@@ -15,9 +15,9 @@ And for development with Hot Module Replacement (HMR) to automatically update th
 - Support for HTTP/2.
 - Detects if SSL certificates are renewed (different datetime) and restarts automatically.
 - Binaries compiled (x64 bits) for: 🐧Linux, 🪟 Windows and 🍎MacOS.
-- Just 1 file and 7 Kb.
+- Just 1 file and 8 Kb.
 
-![7 Kb](https://img.shields.io/github/size/EduardoRuizM/june-webserver/webserver.js) ![NPM Downloads](https://img.shields.io/npm/dt/june-webserver)
+![8 Kb](https://img.shields.io/github/size/EduardoRuizM/june-webserver/webserver.js) ![NPM Downloads](https://img.shields.io/npm/dt/june-webserver)
 
 ### 👉 JuNe Server was developed initially for JavaScript Framework [JuNe PaulaJS](https://github.com/EduardoRuizM/june-paulajs "JuNe PaulaJS")
 
@@ -60,6 +60,7 @@ Passed as parameter (prefixed with hyphen) on command line, or an array object o
 | http2 | Use HTTP/2 (certs required) | - | 0 | 1 |
 | index | Index files to scan in folders default (sep by space) | - | index.html index.htm | - |
 | if404 | Returns the specified file if path does not exist | - | - | index.html |
+| alias | Map URL location to different filesystem path | - | - | - |
 | dev | Development mode | - | false | 1 |
 | hmr | HMR Port in Dev mode | - | 30795 | - |
 | script | (only in Dev mode) Optional code (instead reload) to run when update | - | location.reload() | - |
@@ -69,6 +70,13 @@ Set `-dev 1` for activate development mode.
 For development mode:
 - `<head>` tag must exist in HTML files, then JuNe WebServer adds a JavaScript code with WebSockets to check for changes and reload if necessary.
 - `script` Custom JavaScript code to run on project update or location.reload()
+
+### Using alias for URL mapping
+To define URL path aliases using the format **/request1|path1[/request2|path2]** where each pair maps a request path to a local directory.
+Allowing the server to serve files from pathX when a client accesses /requestX, example: `/shared|/var/home/mypath`
+Sample for `package.json`
+🐧 Linux: `"start": "node webserver.js -if404 index.html -alias \"/js/|/var/home/myjs\" -dev 1"` all **/js** request to **/var/home/myjs**
+🪟 Windows: `"start": "node webserver.js -if404 index.html -alias \"/js/|D:\\Documents\\myjs\" -dev 1"` all **/js** request to **D:\Documents\myjs**
 
 ### Projects with process in a file
 Some projects process paths or HTML files internally in a single file, usually *index.html* such as JavaScript frameworks with routing system.
